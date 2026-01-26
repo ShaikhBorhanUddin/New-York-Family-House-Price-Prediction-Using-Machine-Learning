@@ -1,4 +1,4 @@
-# New York Property Price Prediction Using Machine Learning 
+# New York Family House Price Prediction Using Machine Learning 
 
 ![Dashboard](https://github.com/ShaikhBorhanUddin/New-York-Property-Price-Prediction-Using-Machine-Learning/blob/main/Assets/nyc_title.png?raw=true) 
 
