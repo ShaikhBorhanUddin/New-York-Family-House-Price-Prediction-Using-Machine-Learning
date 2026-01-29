@@ -1,0 +1,7 @@
+
+streamlit
+pandas
+numpy # Often a dependency for pandas/sklearn
+xgboost
+scikit-learn # For joblib and potentially other utilities
+streamlit-folium # New dependency for mapping functionalities
