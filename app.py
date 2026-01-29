@@ -7,11 +7,11 @@ import folium
 from streamlit_folium import st_folium
 
 # --- File Paths ---
-model_path = 'xgboost_model.pkl'
-feature_names_path = 'feature_names.pkl'
-unique_categorical_values_path = 'unique_categorical_values.pkl'
-combined_location_mapping_path = 'combined_location_mapping.pkl'
-location_coordinates_mapping_path = 'location_coordinates_mapping.pkl'
+model_path = 'Models/xgboost_model.pkl'
+feature_names_path = 'Models/feature_names.pkl'
+unique_categorical_values_path = 'Models/unique_categorical_values.pkl'
+combined_location_mapping_path = 'Models/combined_location_mapping.pkl'
+location_coordinates_mapping_path = 'Models/location_coordinates_mapping.pkl'
 
 # --- Load Model and Artifacts ---
 @st.cache_resource
