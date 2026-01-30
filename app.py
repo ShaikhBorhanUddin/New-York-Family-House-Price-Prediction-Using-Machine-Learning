@@ -171,6 +171,23 @@ with col1:
     block = st.number_input('BLOCK', min_value=1, value=374, help='Block number')
     # LOT Selectbox
     lot = st.number_input('LOT', min_value=1, value=46, help='Lot number')
+
+   st.header('Building Characteristics')
+
+   # BUILDING CLASS AT TIME OF SALE Selectbox
+    selected_building_class = st.selectbox(
+        'BUILDING CLASS AT TIME OF SALE',
+        options=unique_categorical_values['BUILDING CLASS AT TIME OF SALE'],
+        index=get_select_box_index(unique_categorical_values['BUILDING CLASS AT TIME OF SALE'], 'A4'),
+        help='Building class at time of sale'
+    )
+    # BUILDING CLASS CATEGORY DESCRIPTION Selectbox           
+    selected_building_category = st.selectbox(
+        'BUILDING CLASS CATEGORY DESCRIPTION',
+        options=unique_categorical_values['BUILDING CLASS CATEGORY DESCRIPTION'],
+        index=get_select_box_index(unique_categorical_values['BUILDING CLASS CATEGORY DESCRIPTION'], 'ONE FAMILY DWELLINGS'),
+        help='Category of the building class'
+    )
     
     # Latitude and Longitude inputs for map visualization (now dynamically updated)
     st.subheader('Property Location (for Map Visualization)')
@@ -200,20 +217,6 @@ with col2:
     year_built = st.number_input('YEAR BUILT', min_value=1700, max_value=2024, value=1900, help='Year property was built')
     sale_year = st.number_input('SALE YEAR', min_value=2000, max_value=2024, value=2022, help='Year of sale')
     sale_month = st.number_input('SALE MONTH', min_value=1, max_value=12, value=9, help='Month of sale (1-12)')
-
-    st.header('Building Characteristics')
-    selected_building_class = st.selectbox(
-        'BUILDING CLASS AT TIME OF SALE',
-        options=unique_categorical_values['BUILDING CLASS AT TIME OF SALE'],
-        index=get_select_box_index(unique_categorical_values['BUILDING CLASS AT TIME OF SALE'], 'A4'),
-        help='Building class at time of sale'
-    )
-    selected_building_category = st.selectbox(
-        'BUILDING CLASS CATEGORY DESCRIPTION',
-        options=unique_categorical_values['BUILDING CLASS CATEGORY DESCRIPTION'],
-        index=get_select_box_index(unique_categorical_values['BUILDING CLASS CATEGORY DESCRIPTION'], 'ONE FAMILY DWELLINGS'),
-        help='Category of the building class'
-    )
 
 # Create a button to make predictions
 if st.button('Predict Sale Price'):
