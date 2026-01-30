@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/🐞%20Issues-GitHub-red" alt="Issues">
 
   <!-- Repo Stats (UPDATE REPO NAME) -->
-  <img src="https://img.shields.io/github/repo-size/ShaikhBorhanUddin/New-York-Family-Home-Price-Prediction-Using-Machine-Learning?logo=github" alt="Repo Size">
+  <img src="https://img.shields.io/github/repo-size/ShaikhBorhanUddin/New-York-Family-Home-Price-Prediction?logo=github" />
   <img src="https://img.shields.io/github/last-commit/ShaikhBorhanUddin/New-York-Family-Home-Price-Prediction-Using-Machine-Learning" alt="Last Commit">
 
   <!-- Model -->
