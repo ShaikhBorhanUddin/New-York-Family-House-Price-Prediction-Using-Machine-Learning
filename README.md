@@ -16,9 +16,6 @@
   <!-- Models -->
   <img src="https://img.shields.io/badge/🤖%20Models-XGBoost | ElasticNet | Random Forest-red" alt="Model: XGBoost">
 
-  <!-- ML Stack -->
-  <img src="https://img.shields.io/badge/ML%20Stack-Scikit--Learn%20%7C%20XGBoost-purple" alt="ML Stack">
-
   <!-- Visualization -->
   <img src="https://img.shields.io/badge/📊%20Visualization-Matplotlib%20%7C%20Seaborn-yellow" alt="Visualization">
 
@@ -26,7 +23,7 @@
   <img src="https://img.shields.io/badge/Dataset-Kaggle | data.gov | datahub-blueviolet" alt="Dataset: NYC Property Sales">
 
   <!-- Runtime -->
-  <img src="https://img.shields.io/badge/Runtime-CPU%20%7C%20Colab-blue" alt="Runtime">
+  <img src="https://img.shields.io/badge/Runtime-CPU-blue" alt="Runtime">
 
   <!-- Deployment -->
   <img src="https://img.shields.io/badge/Deployment-Streamlit-orange?logo=streamlit" alt="Deployment: Streamlit">
