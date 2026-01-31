@@ -155,8 +155,8 @@ with col1:
         on_change=on_zip_code_change
     )
 
-    block = st.number_input("BLOCK", min_value=1, value=374)
-    lot = st.number_input("LOT", min_value=1, value=46)
+    block = st.number_input("BLOCK", min_value=1, max_value=16350, value=374)
+    lot = st.number_input("LOT", min_value=1, max_value=4336, value=46)
 
     st.header("Building Characteristics")
 
