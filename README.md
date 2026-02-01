@@ -22,12 +22,6 @@
   <!-- Dataset -->
   <img src="https://img.shields.io/badge/🗂️Dataset-Kaggle | data.gov | datahub-blueviolet" alt="Dataset: NYC Property Sales"> 
 
-  <!-- Data Processing -->
-  <img src="https://img.shields.io/badge/🧹%20Data%20Processing-Pandas%20%7C%20NumPy-blue" alt="Data Processing">
-
-  <!-- Environment -->
-  <img src="https://img.shields.io/badge/Environment-Jupyter%20%7C%20Colab-lightgrey" alt="Environment">
-
   <!-- Runtime -->
   <img src="https://img.shields.io/badge/⚙️Runtime-CPU-blue" alt="Runtime"> 
   
