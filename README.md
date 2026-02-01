@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/Language-Python-green?logo=python" alt="Language: Python">
 
   <!-- License & Issues -->
-  <img src="https://img.shields.io/badge/⚖️%20License-MIT-blue" alt="License">
+  <img src="https://img.shields.io/badge/⚖️%20License-MIT-red" alt="License">
   <img src="https://img.shields.io/badge/🐞%20Issues-None-green" alt="Issues">
 
   <!-- Repo Stats -->
