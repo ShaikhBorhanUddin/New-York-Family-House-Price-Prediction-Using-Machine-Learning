@@ -3,7 +3,7 @@
 <p align="left">
   <!-- Core -->
   <img src="https://img.shields.io/badge/Made%20With-Colab-blue?logo=googlecolab&logoColor=white" alt="Made with Colab">
-  <img src="https://img.shields.io/badge/Language-Python-blue?logo=python" alt="Language: Python">
+  <img src="https://img.shields.io/badge/Language-Python-green?logo=python" alt="Language: Python">
 
   <!-- License & Issues -->
   <img src="https://img.shields.io/badge/⚖️%20License-MIT-blue" alt="License">
