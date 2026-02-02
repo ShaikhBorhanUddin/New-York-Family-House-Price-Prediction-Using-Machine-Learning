@@ -50,7 +50,7 @@ Accurately estimating residential property prices in New York City is challengin
 ## Folder Structure 
 
 ```bash
-End to End NLP Pipeline For AI-Generated Text Detection
+House Price Prediction Project
 │
 ├── Assets/                       # Screenshots, visualizations and images for documentation
 ├── Dataset/               
