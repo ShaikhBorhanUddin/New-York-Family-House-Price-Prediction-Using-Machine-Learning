@@ -49,6 +49,23 @@ Accurately estimating residential property prices in New York City is challengin
 
 ## Folder Structure 
 
+```bash
+End to End NLP Pipeline For AI-Generated Text Detection
+│
+├── Assets/                       # Screenshots, visualizations and images for documentation
+├── Dataset/               
+│      ├── Raw/                   # Original dataset from Kaggle (3rd dataset too large to upload in GitHub)
+│      ├── Preprocessed/          # Dataset with added features
+│      ├── Cleaned/               # Cleaned and merged datasets
+│      └── Feature Engineered/    # dataset with BoW, TF-IDF, word2vec and lemmatized features
+├── Models/                       # All saved models (distilbert safetensor too large to upload in GitHub)
+├── Notebooks/                    # Data preprocessing, EDA, train/test, result visualization
+├── app.py                        # Code for deployment
+├── requirements.txt              # Python dependencies for deployment
+├── README.md                     # Project documentation
+└── Licence
+```
+
 ## Workflow 
 
 ## Dataset 
