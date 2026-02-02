@@ -30,7 +30,7 @@
 
   <!-- DevOps -->
   <img src="https://img.shields.io/badge/Version%20Control-Git-orange?logo=git" alt="Git">
-  <img src="https://img.shields.io/badge/Host-GitHub-black?logo=github" alt="GitHub">
+  <img src="https://img.shields.io/badge/Host-GitHub-green?logo=github" alt="GitHub">
 
   <!-- Social -->
   <img src="https://img.shields.io/github/forks/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning?style=social" alt="Forks">
