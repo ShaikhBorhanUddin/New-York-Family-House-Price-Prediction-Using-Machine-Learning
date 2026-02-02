@@ -52,7 +52,7 @@ Accurately estimating residential property prices in New York City is challengin
 ```bash
 House Price Prediction Project
 │
-├── Assets/                       # Screenshots, visualizations and images for documentation
+├── Assets/                       # Images for project documentation
 ├── Dataset/               
 │      ├── Raw/                   # Original dataset from Kaggle (3rd dataset too large to upload in GitHub)
 │      ├── Preprocessed/          # Dataset with added features
