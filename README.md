@@ -60,13 +60,13 @@ House Price Prediction Project
 │      ├── Cleaned/               # Cleaned and merged datasets
 │      └── Feature Engineered/    # dataset with BoW, TF-IDF, word2vec and lemmatized features
 ├── Models/
-│      ├── Raw/                       # All saved models (distilbert safetensor too large to upload in GitHub)
-│      ├── Raw/
-│      ├── Raw/
-│      ├── Raw/
-│      ├── Raw/
-│      ├── Raw/
-│      └── Raw/
+│      ├── combined_location_mapping.pkl                       
+│      ├── feature_names.pkl
+│      ├── location_coordinate_mapping.pkl
+│      ├── unique_categorical_values.pkl
+│      ├── xgboost_model.pkl
+│      ├── elastic_net_model.pkl
+│      └── rf_model.pkl                        # Not included in the repository due to large size (3.66 GB)
 ├── Notebooks/                    # Data preprocessing, EDA, train/test, result visualization
 ├── app.py                        # Code for deployment
 ├── requirements.txt              # Python dependencies for deployment
