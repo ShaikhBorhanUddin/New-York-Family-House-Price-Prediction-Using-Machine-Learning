@@ -56,8 +56,8 @@ House Price Prediction Project
 ├── Assets/                       # Images for project documentation
 ├── Dataset/               
 │      ├── Raw/                  
-│      │     ├── nyc_property_sales.csv     # Not included in the repository due to exceeding maximum file size (364.5 MB)
-│      │     ├── PLUTO.csv                  # Not included in the repository due to exceeding maximum file size (292.1 MB)
+│      │     ├── nyc_property_sales.csv      # Not included in the repository due to exceeding maximum file size (364.5 MB)
+│      │     ├── PLUTO.csv                   # Not included in the repository due to exceeding maximum file size (292.1 MB)
 │      │     └── cpi_index.csv 
 │      ├── Cleaned/               
 │      │     ├── nyc_property_sales_cleaned.csv
