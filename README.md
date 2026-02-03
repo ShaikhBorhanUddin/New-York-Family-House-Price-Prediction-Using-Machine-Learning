@@ -72,11 +72,11 @@ House Price Prediction Project
 │      ├── unique_categorical_values.pkl
 │      ├── xgboost_model.pkl
 │      ├── elastic_net_model.pkl
-│      └── rf_model.pkl                        # Not included in the repository due to large  model size (3.66 GB)
-├── Notebooks/                    # Data preprocessing, EDA, train/test, result visualization
-├── app.py                        # Code for deployment
-├── requirements.txt              # Python dependencies for deployment
-├── README.md                     # Project documentation
+│      └── rf_model.pkl                       # Not included in the repository due to large  model size (3.66 GB)
+├── Notebooks/                                # Data preprocessing, EDA, train/test, result visualization
+├── app.py                                    # Code for deployment
+├── requirements.txt                          # Python dependencies for deployment
+├── README.md                                 # Project documentation
 └── Licence
 ```
 
