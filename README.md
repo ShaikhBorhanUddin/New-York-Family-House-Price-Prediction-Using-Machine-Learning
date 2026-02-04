@@ -98,6 +98,7 @@ The original [Dataset](https://www.kaggle.com/datasets/datasciencedonut/current-
 ## Data Cleaning and Preprocessing 
 
 While exact sale dates contain day-level information, real estate prices vary at monthly or quarterly scales. Retaining year and month preserves meaningful temporal signal while avoiding high-cardinality features and potential leakage. 
+
 Because adjusted sale price represents the inflation-normalized economic value of the property, it was used as the modeling target. Nominal sale price was excluded to avoid redundancy and inflation-driven noise. 
 
 ## Exploratory Data Analysis 
