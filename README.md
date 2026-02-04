@@ -56,8 +56,8 @@ House Price Prediction Project
 ├── Assets/                                  # Images for project documentation
 ├── Dataset/               
 │      ├── Raw/                  
-│      │     ├── nyc_property_sales.csv      # Not included in the repository due to exceeding maximum file size (364.5 MB)
-│      │     ├── PLUTO.csv                   # Not included in the repository due to exceeding maximum file size (292.1 MB)
+│      │     ├── nyc_property_sales.csv      # Not included in repository due to large size (364.5 MB)
+│      │     ├── PLUTO.csv                   # Not included in repository due to large size (292.1 MB)
 │      │     └── cpi_index.csv 
 │      ├── Cleaned/               
 │      │     ├── nyc_property_sales_cleaned.csv
@@ -72,7 +72,7 @@ House Price Prediction Project
 │      ├── unique_categorical_values.pkl
 │      ├── xgboost_model.pkl
 │      ├── elastic_net_model.pkl
-│      └── rf_model.pkl                       # Not included in the repository due to large  model size (3.66 GB)
+│      └── rf_model.pkl                       # Not included in repository due to large size (3.66 GB)
 ├── Notebooks/                                
 │      ├── property_sales_data_preprocessing.ipynb
 │      ├── PLUTO_data_preprocessing.ipynb
