@@ -53,7 +53,7 @@ Accurately estimating residential property prices in New York City is challengin
 ```bash
 House Price Prediction Project
 │
-├── Assets/                       # Images for project documentation
+├── Assets/                                  # Images for project documentation
 ├── Dataset/               
 │      ├── Raw/                  
 │      │     ├── nyc_property_sales.csv      # Not included in the repository due to exceeding maximum file size (364.5 MB)
@@ -73,8 +73,17 @@ House Price Prediction Project
 │      ├── xgboost_model.pkl
 │      ├── elastic_net_model.pkl
 │      └── rf_model.pkl                       # Not included in the repository due to large  model size (3.66 GB)
-├── Notebooks/                                # Data preprocessing, EDA, train/test, result visualization
-├── app.py                                    # Code for deployment
+├── Notebooks/                                
+│      ├── property_sales_data_preprocessing.ipynb
+│      ├── PLUTO_data_preprocessing.ipynb
+│      ├── CPI_data_preprocessing.ipynb
+│      ├── EDA.ipynb
+│      ├── feature_engineering.ipynb
+│      ├── xgboost_train_test.ipynb
+│      ├── elasticnet_train_test.ipynb
+│      ├── rf_train_test.ipynb
+│      └── model_comparison.ipynb
+├── app.py                                    # Deployment code
 ├── requirements.txt                          # Python dependencies for deployment
 ├── README.md                                 # Project documentation
 └── Licence
