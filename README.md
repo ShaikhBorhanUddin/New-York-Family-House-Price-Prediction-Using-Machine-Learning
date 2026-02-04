@@ -97,6 +97,8 @@ The original [Dataset](https://www.kaggle.com/datasets/datasciencedonut/current-
 
 ## Data Cleaning and Preprocessing 
 
+While exact sale dates contain day-level information, real estate prices vary at monthly or quarterly scales. Retaining year and month preserves meaningful temporal signal while avoiding high-cardinality features and potential leakage. 
+
 ## Exploratory Data Analysis 
 
 ## Feature Engineering 
