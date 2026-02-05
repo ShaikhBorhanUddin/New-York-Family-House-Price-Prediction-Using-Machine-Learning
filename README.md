@@ -117,7 +117,18 @@ The original [Dataset](https://www.kaggle.com/datasets/datasciencedonut/current-
 | TAX CLASS AT TIME OF SALE | The tax class assigned at the time of sale. |
 | BUILDING CLASS AT TIME OF SALE | The building class assigned at the time of sale. |
 | SALE PRICE | The price the property was sold for. |
-| SALE DATE | The date the property was sold. |
+| SALE DATE | The date the property was sold. | 
+
+| Column Name | Data Type | Description |
+|------------|-----------|-------------|
+| borough | object | The name of the borough where the property is located. |
+| Tax block | int64 | A tax block is a subdivision of the borough used to identify real property locations. |
+| Tax lot | int64 | A tax lot is a subdivision of a tax block that uniquely identifies a property. |
+| postcode | float64 | The ZIP/postal code of the property location. |
+| yearbuilt | float64 | The year in which the property structure was originally built. |
+| latitude | float64 | The geographic latitude coordinate of the property location. |
+| longitude | float64 | The geographic longitude coordinate of the property location. |
+
 
 ## Data Cleaning and Preprocessing 
 
