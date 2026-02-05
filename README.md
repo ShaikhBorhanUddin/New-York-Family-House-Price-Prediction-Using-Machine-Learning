@@ -93,7 +93,7 @@ House Price Prediction Project
 
 ## Dataset 
 
-The primary dataset [Current NYC Property Sales](https://www.kaggle.com/datasets/datasciencedonut/current-nyc-property-sales), is sourced from Kaggle. The dataset contains a record of every property sold in the New York City property market since 2003 (the first year sales data was first listed on the public record) and updates monthly to include rolling sales. However, in this project only rcords from 2003 to 2023 were considered. For additional information on property addresses a secondary [PLUTO](https://catalog.data.gov/dataset/primary-land-use-tax-lot-output-pluto) dataset is used. For consumer price index [CPI](https://datahub.io/core/cpi-us) dataset is used. 
+The primary dataset [Current NYC Property Sales](https://www.kaggle.com/datasets/datasciencedonut/current-nyc-property-sales), is sourced from Kaggle. The dataset contains a record of every property sold in the New York City property market since 2003 (the first year sales data was first listed on the public record) and updates monthly to include rolling sales. However, for this project, only records from 2003 to 2023 were considered. 
 
 | Field Name | Data Type | Description |
 |-----------|-----------|-------------|
@@ -118,6 +118,8 @@ The primary dataset [Current NYC Property Sales](https://www.kaggle.com/datasets
 | BUILDING CLASS AT TIME OF SALE | object | Building classification at the time of sale. |
 | SALE PRICE | object | The price for which the property was sold. |
 | SALE DATE | object | The date when the property was sold. | 
+
+For additional information on property addresses a secondary [PLUTO](https://catalog.data.gov/dataset/primary-land-use-tax-lot-output-pluto) dataset is used. For consumer price index [CPI](https://datahub.io/core/cpi-us) dataset is used. 
 
 | Column Name | Data Type | Description |
 |------------|-----------|-------------|
