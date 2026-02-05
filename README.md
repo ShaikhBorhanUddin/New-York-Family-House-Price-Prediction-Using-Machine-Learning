@@ -95,29 +95,29 @@ House Price Prediction Project
 
 The original [Dataset](https://www.kaggle.com/datasets/datasciencedonut/current-nyc-property-sales) is sourced from Kaggle. For additional information on property addresses a secondary [PLUTO](https://catalog.data.gov/dataset/primary-land-use-tax-lot-output-pluto) dataset is used. For consumer price index [CPI](https://datahub.io/core/cpi-us) dataset is used. 
 
-| Field Name | Description |
-|-----------|-------------|
-| BOROUGH | The name of the borough in which the property is located. |
-| NEIGHBORHOOD | The common name of the neighborhood. |
-| BUILDING CLASS CATEGORY | Classification to easily identify similar properties by broad usage. |
-| TAX CLASS AT PRESENT | Every property in the city is assigned to one of four tax classes (Classes 1, 2, 3, and 4), based on the use of the property. |
-| BLOCK | A Tax Block is a subdivision of the borough on which real properties are located. |
-| LOT | A Tax Lot is a subdivision of a Tax Block and represents the property's unique location. |
-| EASE-MENT | An easement is a right, such as a right of way, which allows an entity to make limited use of another’s real property. |
-| BUILDING CLASS AT PRESENT | The Building Classification is used to describe a property’s constructive use. |
-| ADDRESS | The street address of the property. |
-| APARTMENT NUMBER | Apartment number of the property (if the property is an apartment). |
-| ZIP CODE | The ZIP code of the property. |
-| RESIDENTIAL UNITS | Number of residential units the property contains. |
-| COMMERCIAL UNITS | Number of commercial units the property contains. |
-| TOTAL UNITS | The total number of units the property contains. |
-| LAND SQUARE FEET | The land area of the property listed in square feet. |
-| GROSS SQUARE FEET | The total area of all the floors of a building measured from the exterior surfaces of the outside walls, including land area and internal space. |
-| YEAR BUILT | Year the structure on the property was built. |
-| TAX CLASS AT TIME OF SALE | The tax class assigned at the time of sale. |
-| BUILDING CLASS AT TIME OF SALE | The building class assigned at the time of sale. |
-| SALE PRICE | The price the property was sold for. |
-| SALE DATE | The date the property was sold. | 
+| Field Name | Data Type | Description |
+|-----------|-----------|-------------|
+| BOROUGH | object | The name of the borough in which the property is located. |
+| NEIGHBORHOOD | object | The common name of the neighborhood. |
+| BUILDING CLASS CATEGORY | object | Classification to easily identify similar properties by broad usage. |
+| TAX CLASS AT PRESENT | object | Tax class assigned to the property based on its current use. |
+| BLOCK | object | A tax block is a subdivision of the borough on which real properties are located. |
+| LOT | object | A tax lot is a subdivision of a tax block that uniquely identifies a property. |
+| EASE-MENT | object | A legal right allowing limited use of another’s property (e.g., right of way). |
+| BUILDING CLASS AT PRESENT | object | Classification describing the property's current constructive use. |
+| ADDRESS | object | The street address of the property. |
+| APARTMENT NUMBER | object | Apartment number of the property, if applicable. |
+| ZIP CODE | object | The ZIP code of the property. |
+| RESIDENTIAL UNITS | object | Number of residential units contained in the property. |
+| COMMERCIAL UNITS | object | Number of commercial units contained in the property. |
+| TOTAL UNITS | object | Total number of units in the property. |
+| LAND SQUARE FEET | object | Land area of the property in square feet. |
+| GROSS SQUARE FEET | object | Total floor area of the building measured from exterior walls. |
+| YEAR BUILT | object | Year the structure on the property was built. |
+| TAX CLASS AT TIME OF SALE | object | Tax class assigned to the property at the time of sale. |
+| BUILDING CLASS AT TIME OF SALE | object | Building classification at the time of sale. |
+| SALE PRICE | object | The price for which the property was sold. |
+| SALE DATE | object | The date when the property was sold. | 
 
 | Column Name | Data Type | Description |
 |------------|-----------|-------------|
