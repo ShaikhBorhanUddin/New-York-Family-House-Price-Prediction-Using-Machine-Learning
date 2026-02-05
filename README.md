@@ -131,6 +131,8 @@ However, the primary dataset does not include precise geolocation information (l
 | latitude | float64 | The geographic latitude coordinate of the property location. |
 | longitude | float64 | The geographic longitude coordinate of the property location. | 
 
+The sale history in the primary dataset spans more than 20 years. To accurately predict house prices in the context of present-day economic conditions, inflation must be taken into account. Therefore, a [Consumer Price Index (CPI)](https://datahub.io/core/cpi-us) dataset is used to adjust historical sale prices to their current-time equivalents. This inflation adjustment is an industry-standard practice, widely adopted by economists, financial institutions, and real estate analytics platforms such as Zillow and Redfin, all of which rely on monthly CPI data for price normalization. 
+
 For consumer price index [CPI](https://datahub.io/core/cpi-us) dataset is used. 
 
 | Field Name | Data Type | Description |
