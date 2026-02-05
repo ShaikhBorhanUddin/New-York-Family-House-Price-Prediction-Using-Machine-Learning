@@ -133,14 +133,11 @@ However, the primary dataset does not include precise geolocation information (l
 
 The sale history in the primary dataset spans more than 20 years. To accurately predict house prices in the context of present-day economic conditions, inflation must be taken into account. Therefore, a [Consumer Price Index (CPI)](https://datahub.io/core/cpi-us) dataset is used to adjust historical sale prices to their current-time equivalents. This inflation adjustment is an industry-standard practice, widely adopted by economists, financial institutions, and real estate analytics platforms such as Zillow and Redfin, all of which rely on monthly CPI data for price normalization. 
 
-For consumer price index [CPI](https://datahub.io/core/cpi-us) dataset is used. 
-
 | Field Name | Data Type | Description |
 |-----------|-----------|-------------|
-| Date | object | The date corresponding to the CPI record. |
-| CPI | object | Consumer Price Index value representing inflation level. |
-| Year | object | The calendar year of the record. |
-| Month | object | The month of the record (1–12). | 
+| Date | object | The date corresponding to the inflation record. |
+| Index | object | The inflation index value used for price normalization. |
+| Inflation | object | The inflation rate representing the change in price level over time. | 
 
 ## Data Cleaning and Preprocessing 
 
