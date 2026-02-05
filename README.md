@@ -95,6 +95,30 @@ House Price Prediction Project
 
 The original [Dataset](https://www.kaggle.com/datasets/datasciencedonut/current-nyc-property-sales) is sourced from Kaggle. For additional information on property addresses a secondary [PLUTO](https://catalog.data.gov/dataset/primary-land-use-tax-lot-output-pluto) dataset is used. For consumer price index [CPI](https://datahub.io/core/cpi-us) dataset is used. 
 
+| Field Name | Description |
+|-----------|-------------|
+| BOROUGH | The name of the borough in which the property is located. |
+| NEIGHBORHOOD | The common name of the neighborhood. |
+| BUILDING CLASS CATEGORY | Classification to easily identify similar properties by broad usage. |
+| TAX CLASS AT PRESENT | Every property in the city is assigned to one of four tax classes (Classes 1, 2, 3, and 4), based on the use of the property. |
+| BLOCK | A Tax Block is a subdivision of the borough on which real properties are located. |
+| LOT | A Tax Lot is a subdivision of a Tax Block and represents the property's unique location. |
+| EASE-MENT | An easement is a right, such as a right of way, which allows an entity to make limited use of another’s real property. |
+| BUILDING CLASS AT PRESENT | The Building Classification is used to describe a property’s constructive use. |
+| ADDRESS | The street address of the property. |
+| APARTMENT NUMBER | Apartment number of the property (if the property is an apartment). |
+| ZIP CODE | The ZIP code of the property. |
+| RESIDENTIAL UNITS | Number of residential units the property contains. |
+| COMMERCIAL UNITS | Number of commercial units the property contains. |
+| TOTAL UNITS | The total number of units the property contains. |
+| LAND SQUARE FEET | The land area of the property listed in square feet. |
+| GROSS SQUARE FEET | The total area of all the floors of a building measured from the exterior surfaces of the outside walls, including land area and internal space. |
+| YEAR BUILT | Year the structure on the property was built. |
+| TAX CLASS AT TIME OF SALE | The tax class assigned at the time of sale. |
+| BUILDING CLASS AT TIME OF SALE | The building class assigned at the time of sale. |
+| SALE PRICE | The price the property was sold for. |
+| SALE DATE | The date the property was sold. |
+
 ## Data Cleaning and Preprocessing 
 
 While exact sale dates contain day-level information, real estate prices vary at monthly or quarterly scales. Retaining year and month preserves meaningful temporal signal while avoiding high-cardinality features and potential leakage. 
