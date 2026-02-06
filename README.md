@@ -159,13 +159,11 @@ In the NEIGHBORHOOD column, inconsistencies were observed due to trailing white 
 
 Each BUILDING CLASS CATEGORY entry combines a category number and a textual description, where the first two characters represent the category code and the remaining text provides the description. To facilitate more effective machine learning training, this feature was decomposed into two separate variables: BUILDING CLASS CATEGORY NUMBER and BUILDING CLASS CATEGORY DESCRIPTION. 
 
-```bash
 |     BUILDING CLASS CATEGORY    | BUILDING CLASS CATEGORY NUMBER | BUILDING CLASS CATEGORY DESCRIPTION |
 |--------------------------------|--------------------------------|-------------------------------------|
 |     01 ONE FAMILY DWELLINGS    |               1                |        ONE FAMILY DWELLINGS         |
 |     02 TWO FAMILY DWELLINGS    |               2                |        TWO FAMILY DWELLINGS         |
 | 07 RENTALS - WALKUP APARTMENTS |               7                |      RENTALS - WALKUP APARTMENTS    | 
-``` 
 
 Since this project focuses on family house price prediction, only records corresponding to one-, two-, and three-family dwellings were retained, while all other property categories were excluded. Although this filtering significantly reduced the dataset size, it preserved a sufficiently large and representative sample for modeling family housing prices.
 
