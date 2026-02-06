@@ -150,6 +150,13 @@ Handling these missing values, along with data cleaning, feature modification, e
 
 ## Data Cleaning and Preprocessing 
 
+| BUILDING CLASS CATEGORY | BUILDING CLASS CATEGORY NUMBER | BUILDING CLASS CATEGORY DESCRIPTION |
+|-------------------------|--------------------------------|-------------------------------------|
+| 01 ONE FAMILY DWELLINGS | 1 | ONE FAMILY DWELLINGS |
+| 02 TWO FAMILY DWELLINGS | 2 | TWO FAMILY DWELLINGS |
+| 07 RENTALS - WALKUP APARTMENTS | 7 | RENTALS - WALKUP APARTMENTS |
+| 07 RENTALS - WALKUP APARTMENTS | 7 | RENTALS - WALKUP APARTMENTS | 
+
 While exact sale dates contain day-level information, real estate prices vary at monthly or quarterly scales. Retaining year and month preserves meaningful temporal signal while avoiding high-cardinality features and potential leakage. 
 
 Because adjusted sale price represents the inflation-normalized economic value of the property, it was used as the modeling target. Nominal sale price was excluded to avoid redundancy and inflation-driven noise. 
