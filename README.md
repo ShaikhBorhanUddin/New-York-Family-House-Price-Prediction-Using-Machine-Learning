@@ -157,6 +157,8 @@ Data cleaning begins with the property sales dataset. The BOROUGH column contain
 ```
 In the NEIGHBORHOOD column, inconsistencies were observed due to trailing white spaces, which artificially inflated the number of unique values (for example, both 'ALPHABET CITY' and 'ALPHABET CITY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' appeared as separate entries). Trimming white spaces, along with removing anomalous non-text entries (such as integer values like 1026, 3019, 3004, and 1021), significantly reduced redundant categories and improved data consistency. 
 
+Each BUILDING CLASS CATEGORY entry combines a category number and a textual description, where the first two characters represent the category code and the remaining text provides the description. To facilitate more effective machine learning training, this feature was decomposed into two separate variables: BUILDING CLASS CATEGORY NUMBER and BUILDING CLASS CATEGORY DESCRIPTION. 
+
 ```bash
 |     BUILDING CLASS CATEGORY    | BUILDING CLASS CATEGORY NUMBER | BUILDING CLASS CATEGORY DESCRIPTION |
 |--------------------------------|--------------------------------|-------------------------------------|
