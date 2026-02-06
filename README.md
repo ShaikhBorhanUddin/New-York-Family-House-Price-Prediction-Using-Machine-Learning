@@ -165,7 +165,19 @@ Each BUILDING CLASS CATEGORY entry combines a category number and a textual desc
 |     01 ONE FAMILY DWELLINGS    |               1                |        ONE FAMILY DWELLINGS         |
 |     02 TWO FAMILY DWELLINGS    |               2                |        TWO FAMILY DWELLINGS         |
 | 07 RENTALS - WALKUP APARTMENTS |               7                |      RENTALS - WALKUP APARTMENTS    | 
-```
+``` 
+
+Since this project focuses on family house price prediction, only records corresponding to one-, two-, and three-family dwellings were retained, while all other property categories were excluded. Although this filtering significantly reduced the dataset size, it preserved a sufficiently large and representative sample for modeling family housing prices.
+
+The ZIP CODE column name contained embedded whitespace, which was stripped to standardize the schema and prevent downstream processing issues. The APARTMENT NUMBER feature was removed, as apartment identifiers are not predictive of sale prices and may introduce noise—different properties can share identical apartment numbers, which can confuse machine learning models.
+
+The ADDRESS column was also dropped due to its high risk of data leakage and extremely high cardinality, with over 600,000 unique textual values, making it impractical for encoding prior to model training. Similarly, the EASE-MENT column contained a substantial proportion of missing values and was therefore excluded from further analysis. Since the BUILDING CLASS CATEGORY NUMBER and BUILDING CLASS CATEGORY DESCRIPTION features were derived from the original BUILDING CLASS CATEGORY field, the original column became redundant and was subsequently removed.
+
+While the original SALE DATE provides day-level granularity, real estate prices typically vary at monthly or quarterly scales. To capture meaningful temporal trends while avoiding high-cardinality features and potential leakage, SALE YEAR and SALE MONTH were derived from the sale date and retained in place of the full date field.
+
+Finally, all sale price entries below $15,000 were removed from the dataset. This threshold is not arbitrary but reflects an industry-informed heuristic based on New York City real estate behavior and dataset characteristics. In the NYC market, even the lowest-priced legitimate transactions—such as vacant land, foreclosed units, or parking spaces—rarely occur below $15,000 in arm’s-length sales. Moreover, the dataset documentation indicates that zero-valued sales represent transfers without cash consideration, and exploratory analysis shows that most non-market or artificial transactions cluster between $0 and $10,000. Setting the cutoff at $15,000 effectively removes these non-genuine transactions while preserving valid low-value sales, resulting in a cleaner and more reliable target variable for modeling.
+
+At this stage, the cleaned property sales dataset is finalized and saved for subsequent use in the feature engineering pipeline. 
 
 While exact sale dates contain day-level information, real estate prices vary at monthly or quarterly scales. Retaining year and month preserves meaningful temporal signal while avoiding high-cardinality features and potential leakage. 
 
