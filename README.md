@@ -155,7 +155,7 @@ Data cleaning begins with the property sales dataset. The BOROUGH column contain
 ```bash
 1: 'Manhattan', 2: 'Bronx', 3: 'Brooklyn', 4: 'Queens', 5: 'Staten Island'
 ```
-In the NEIGHBORHOOD column, inconsistencies were observed due to trailing white spaces, which artificially inflated the number of unique values (for example, both ALPHABET CITY and ALPHABET CITY&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp appeared as separate entries). Trimming white spaces, along with removing anomalous non-text entries (such as integer values like 1026, 3019, 3004, and 1021), significantly reduced redundant categories and improved data consistency. 
+In the NEIGHBORHOOD column, inconsistencies were observed due to trailing white spaces, which artificially inflated the number of unique values (for example, both ALPHABET CITY and ALPHABET CITY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; appeared as separate entries). Trimming white spaces, along with removing anomalous non-text entries (such as integer values like 1026, 3019, 3004, and 1021), significantly reduced redundant categories and improved data consistency. 
 
 ```bash
 |     BUILDING CLASS CATEGORY    | BUILDING CLASS CATEGORY NUMBER | BUILDING CLASS CATEGORY DESCRIPTION |
