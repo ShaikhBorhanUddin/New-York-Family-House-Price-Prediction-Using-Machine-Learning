@@ -149,13 +149,13 @@ The property sales dataset contains a significant number of missing values in se
 Handling these missing values, along with data cleaning, feature modification, extraction of new features, and the subsequent merging of the three datasets, will be discussed in detail in the following sections. 
 
 ## Data Cleaning and Preprocessing 
-
+```bash
 | BUILDING CLASS CATEGORY | BUILDING CLASS CATEGORY NUMBER | BUILDING CLASS CATEGORY DESCRIPTION |
 |-------------------------|--------------------------------|-------------------------------------|
 | 01 ONE FAMILY DWELLINGS | 1 | ONE FAMILY DWELLINGS |
 | 02 TWO FAMILY DWELLINGS | 2 | TWO FAMILY DWELLINGS |
 | 07 RENTALS - WALKUP APARTMENTS | 7 | RENTALS - WALKUP APARTMENTS | 
-
+```
 | Field Name | Non-Null Count | Data Type |
 |-----------|---------------|-----------|
 | BOROUGH | 549068 | int64 |
