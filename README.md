@@ -183,7 +183,13 @@ Finally, all **SALE PRICE** entries below $15,000 were removed from the dataset.
 
 At this stage, the [cleaned property sales dataset](https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Dataset/Cleaned/nyc_property_sales_cleaned.csv.zip) is finalized and saved for subsequent use in the feature engineering pipeline. 
 
+The PLUTO (Primary Land Use Tax Lot Output) dataset provides extensive land-use and geographic information at the tax lot level. To reduce complexity during the feature engineering process, only a subset of relevant features was retained, including **borough**, **Tax block**, **Tax lot**, **postcode**, **year built**, **latitude**, and **longitude**, while all other columns were excluded. 
+
 While exact sale dates contain day-level information, real estate prices vary at monthly or quarterly scales. Retaining year and month preserves meaningful temporal signal while avoiding high-cardinality features and potential leakage. 
+
+```bash
+'MN': 1, 'BX': 2, 'BK': 3, 'QN': 4, 'SI': 5
+``` 
 
 Because adjusted sale price represents the inflation-normalized economic value of the property, it was used as the modeling target. Nominal sale price was excluded to avoid redundancy and inflation-driven noise. 
 
