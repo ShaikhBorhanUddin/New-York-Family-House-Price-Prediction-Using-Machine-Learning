@@ -149,6 +149,11 @@ The property sales dataset contains a significant number of missing values in se
 Handling these missing values, along with data cleaning, feature modification, extraction of new features, and the subsequent merging of the three datasets, will be discussed in detail in the following sections. 
 
 ## Data Cleaning and Preprocessing 
+
+```bash
+1: 'Manhattan', 2: 'Bronx', 3: 'Brooklyn', 4: 'Queens', 5: 'Staten Island'
+```
+
 ```bash
 |     BUILDING CLASS CATEGORY    | BUILDING CLASS CATEGORY NUMBER | BUILDING CLASS CATEGORY DESCRIPTION |
 |--------------------------------|--------------------------------|-------------------------------------|
