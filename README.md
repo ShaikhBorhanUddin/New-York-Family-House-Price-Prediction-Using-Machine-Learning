@@ -203,7 +203,7 @@ Official CPI figures are published by the U.S. Bureau of Labor Statistics on the
 | 2023-11-01 | 2023 | 11 |
 | 2023-10-01 | 2023 | 10 | 
 
-Upon completion of these steps, the cleaned CPI Index dataset was saved for use in the subsequent feature engineering process. 
+Upon completion of these steps, the [cleaned CPI Index dataset](https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Dataset/Cleaned/cpi_index_clean.csv) was saved for use in the subsequent feature engineering process. 
 
 ## Exploratory Data Analysis 
 
