@@ -209,7 +209,11 @@ Upon completion of these steps, the [cleaned CPI Index dataset](https://github.c
 
 ## Feature Engineering 
 
-As discussed in the dataset section, the Property Sales dataset does not contain precise geolocation information, making it necessary to enrich the data before proceeding further. However, the Property Sales and PLUTO datasets use different column names for the common identifiers (borough, block, and lot). These columns were first standardized using a consistent naming convention (shown below). 
+As discussed in the dataset section, the Property Sales dataset does not contain precise geolocation information, making it necessary to enrich the data before proceeding further. However, the cleaned Property Sales and PLUTO datasets use different column names for the common identifiers (borough, block, and lot). These columns were first standardized using a consistent naming convention (shown below). 
+
+```bash
+'borough': 'BOROUGH', 'Tax block': 'BLOCK', 'Tax lot': 'LOT'
+```
 
 Using these three standardized keys, the Sales dataset was then merged with the PLUTO dataset via a left join to retain all sales records while appending available geolocation attributes. The join logic is illustrated below. 
 
