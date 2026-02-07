@@ -232,7 +232,7 @@ At this stage, the recently merged and cleaned Sales–PLUTO dataset is further 
 Based on this year–month alignment, the datasets are merged using a left join to retain all property sales records while appending the appropriate CPI values, as illustrated in the accompanying join diagram. 
 
 <p align="left">
-  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/sales_pluto_cpi_join.png" width="56%" />
+  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/sale_pluto_cpi_join.png" width="56%" />
 </p> 
 
 ## Model Training 
