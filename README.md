@@ -219,7 +219,9 @@ Using these three standardized keys, the Sales dataset was then merged with the 
 
 <p align="left">
   <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/sales_PLUTO_join.png" width="56%" />
-</p> 
+</p>  
+
+The **YEAR BUILT** column contained only a small number of missing values, which were successfully imputed using the corresponding **yearbuilt** column. In contrast, more than 7,000 records were missing **latitude** and **longitude** values. To address this, geolocation imputation was performed in a hierarchical manner. First, missing coordinates were imputed using ZIP CODE level centroids, calculated from available records, with fallback to global medians where necessary. This approach successfully resolved the majority of missing cases. For the remaining unmatched records, BOROUGH level centroids were applied to ensure complete spatial coverage. 
 
 ## Model Training 
 
