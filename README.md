@@ -223,6 +223,18 @@ Using these three standardized keys, the Sales dataset was then merged with the 
 
 The **YEAR BUILT** column contained only a small number of missing values, which were successfully imputed using the corresponding **yearbuilt** column. In contrast, more than 7,000 records were missing **latitude** and **longitude** values. To address this, geolocation imputation was performed in a hierarchical manner. First, missing coordinates were imputed using ZIP CODE level centroids, calculated from available records, with fallback to global medians where necessary. This approach successfully resolved the majority of missing cases. For the remaining unmatched records, BOROUGH level centroids were applied to ensure complete spatial coverage. 
 
+At this stage, the recently merged and cleaned Sales–PLUTO dataset is further integrated with the cleaned CPI dataset to enable inflation-adjusted sale price computation, using SALE YEAR and SALE MONTH from the sales data mapped to the corresponding Year and Month fields in the CPI dataset. 
+
+```bash
+'Year': 'SALE YEAR', 'Month': 'SALE MONTH'
+```
+
+Based on this year–month alignment, the datasets are merged using a left join to retain all property sales records while appending the appropriate CPI values, as illustrated in the accompanying join diagram. 
+
+<p align="left">
+  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/sales_pluto_cpi_join.png" width="56%" />
+</p> 
+
 ## Model Training 
 
 ## Model Performance Evaluation 
