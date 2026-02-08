@@ -266,8 +266,8 @@ Add text
 Analyze the findings 
 
 <p align="center">
-  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/built_year_map.png" width="41.9%" />
-  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/year_built_barchart.png" width="57.6%" />
+  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/built_year_map.png" width="41.8%" />
+  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/year_built_barchart.png" width="57.5%" />
 </p> 
 
 <p align="center">
