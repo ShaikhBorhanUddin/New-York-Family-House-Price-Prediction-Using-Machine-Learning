@@ -24,7 +24,7 @@
   <img src="https://img.shields.io/badge/⚙️Runtime-CPU-blue" alt="Runtime"> 
   
   <!-- Visualization -->
-  <img src="https://img.shields.io/badge/📊%20Visualization-Matplotlib%20%7C%20Seaborn-yellow" alt="Visualization">
+  <img src="https://img.shields.io/badge/📊%20Visualization-Matplotlib | Seaborn | Folium-yellow" alt="Visualization">
 
   <!-- Deployment -->
   <img src="https://img.shields.io/badge/Deployment-Streamlit-orange?logo=streamlit" alt="Deployment: Streamlit">
