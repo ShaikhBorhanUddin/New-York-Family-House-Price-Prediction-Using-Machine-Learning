@@ -266,13 +266,13 @@ Add text
 Analyze the findings 
 
 <p align="center">
-  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/property_location_scatterplot.png" width="42.2%" />
-  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/borough_barchart.png" width="56.7%" />
+  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/built_year_map.png" width="42.2%" />
+  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/year_built_barchart.png" width="56.7%" />
 </p> 
 
 <p align="center">
-  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/top_10_neighborhood.png" width="42.2%" />
-  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/zipcode_distribution.png" width="56.7%" />
+  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/sale_year.png" width="42.2%" />
+  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/sale_month.png" width="56.7%" />
 </p> 
 
 Analyze the findings 
