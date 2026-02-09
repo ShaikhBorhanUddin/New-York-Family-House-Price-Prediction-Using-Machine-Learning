@@ -251,7 +251,7 @@ At this stage, the original SALE PRICE column becomes redundant and is therefore
 
 ## Exploratory Data Analysis 
 
-Add text 
+The primary objective of this project is to predict family house prices (up to three-family dwellings). However, the original raw datasets include all types of property transactions (such as residential buildings, office properties, factories, public establishments, and vacant land) as well as extensive property attributes and inflation data spanning from 1913 to the present. After filtering, cleaning, and feature engineering, it is important to assess how well the retained variables align with the modeling objective. Therefore, exploratory data analysis is performed on the cleaned and feature engineered dataset to understand data distributions, relationships, and potential anomalies before model training. 
 
 <p align="center">
   <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/property_location_scatterplot.png" width="42.2%" />
