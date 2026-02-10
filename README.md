@@ -304,6 +304,18 @@ The adjusted sale price distribution indicates transaction volume peaking in the
 
 ## Model Training 
 
+For model training, several columns were excluded as they do not add predictive value given the project’s focus on family house price prediction. Columns related to present tax class, present building class, and tax class at the time of sale were removed, as only residential family homes (up to three families) are considered and these administrative attributes are unlikely to influence sale prices meaningfully. The TOTAL UNITS column was also dropped because it is simply the sum of residential and commercial units, both of which are already represented separately, making it redundant. Since the target variable is the inflation-adjusted sale price, the original SALE PRICE and CPI columns were removed after deriving the adjusted value. The SALE DATE column was dropped because it was decomposed into SALE YEAR and SALE MONTH, and retaining the exact transaction date could introduce unnecessary high cardinality and potential data leakage. Latitude and longitude were also excluded at this stage, and all remaining columns were retained as model features. 
+
+Categorical variables were handled using one-hot encoding to make them suitable for machine learning algorithms. Specifically, NEIGHBORHOOD, BUILDING CLASS AT TIME OF SALE, and BUILDING CLASS CATEGORY DESCRIPTION were encoded, resulting in a high-dimensional but fully numerical feature space. After preprocessing, the final dataset was split into training and testing sets, with the training data having a shape of (439,248, 283) and the test data having a shape of (109,812, 283), indicating a large-scale supervised learning setup. 
+
+Three different regression models were trained and compared to capture both linear and non-linear relationships in the data. The model configurations are described below. 
+
+| Model Name    | Implementation                          | Key Parameters Used                                                                                       |
+| ------------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| XGBoost       | `xgb.XGBRegressor`                      | `objective='reg:squarederror'`, `n_estimators=100`, `learning_rate=0.1`, `max_depth=5`, `random_state=42` |
+| ElasticNet    | `Pipeline(StandardScaler → ElasticNet)` | `random_state=42`                                                                                         |
+| Random Forest | `RandomForestRegressor`                 | `n_estimators=100`, `random_state=42`, `n_jobs=-1`                                                        | 
+
 ## Model Performance Evaluation 
 
 ## Deployment 
