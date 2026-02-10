@@ -286,12 +286,14 @@ The sales-by-year distribution highlights clear temporal fluctuations in market 
   <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/building_class_at_time_of_sale.png" width="53.3%" />
 </p> 
 
+The building class category description bar chart shows a clear dominance of smaller residential buildings, particularly one- and two-family properties. One-family homes and dwellings account for the largest share of transactions, followed by two-family houses, while three-family properties appear much less frequently. This indicates a housing market that is strongly oriented toward low-density residential use rather than large multi-unit developments. The building class at time of sale bar chart reinforces this pattern, with categories such as A1 (two-story detached single-family homes), A2 (single-family bungalows), B1 (two-family attached), B2 (two-family detached), and B3 (converted single-family houses) comprising a substantial proportion of sales. The steep decline in transaction counts across other building classes further highlights that market activity is highly concentrated within a limited set of conventional residential property types. 
+
 <p align="center">
   <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/top_10_land_square_feet.png" width="49%" />
   <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/top_10_gross_square_feet.png" width="49%" />
 </p> 
 
-Analyze the findings 
+Land and gross square footage distributions further support the idea of standardized, moderately sized properties. Land square footage clusters strongly around a few common sizes, with lots around 2,000, 2,500, 3,000, and 4,000 square feet appearing most frequently, implying zoning or development patterns that favor repeated land sizes. Gross square footage shows a similar concentration, with peaks around 1,600 to 2,400 square feet, aligning well with typical single- and two-family homes. The presence of zero or very small gross square footage values likely reflects special property records rather than true building size. The visuals paint a picture of a fairly uniform residential market, where standard home types and sizes dominate both the physical landscape and transaction activity. 
 
 <p align="center">
   <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/adjusted_sale_price.png" width="54%" />
