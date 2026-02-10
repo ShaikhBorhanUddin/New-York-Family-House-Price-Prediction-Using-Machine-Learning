@@ -297,7 +297,7 @@ Land and gross square footage distributions further support the idea of standard
 
 <p align="center">
   <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/sale_price_distribution.png" width="54.2%" />
-  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/sales_price_map.png" width="45%" />
+  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/sales_price_map.png" width="44.9%" />
 </p> 
 
 The adjusted sale price distribution is extremely right-skewed, with the vast majority of properties clustered in the lowest price range and a rapid drop-off as prices go beyond 11 millios USD, indicating that high-value transactions are rare outliers rather than the norm. This skew is mirrored spatially in the map, where most properties appear in lighter shades across the outer boroughs, reflecting relatively lower prices, while the darker, highest-value clusters are tightly concentrated in Manhattan; particularly along central and waterfront areas and parts of northwestern Brooklyn. Together, the chart and map show a market where affordability dominates in volume, but extreme prices are highly localized, reinforcing strong geographic inequality in property values driven by location rather than sheer transaction frequency. 
