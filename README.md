@@ -296,7 +296,7 @@ The building class category description bar chart shows a clear dominance of sma
 Land and gross square footage distributions further support the idea of standardized, moderately sized properties. Land square footage clusters strongly around a few common sizes, with lots around 2,000, 2,500, 3,000, and 4,000 square feet appearing most frequently, implying zoning or development patterns that favor repeated land sizes. Gross square footage shows a similar concentration, with peaks around 1,600 to 2,400 square feet, aligning well with typical single- and two-family homes. The presence of zero or very small gross square footage values likely reflects special property records rather than true building size. The visuals paint a picture of a fairly uniform residential market, where standard home types and sizes dominate both the physical landscape and transaction activity. 
 
 <p align="center">
-  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/sale_price_distribution.png" width="54%" />
+  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/sale_price_distribution.png" width="54.2%" />
   <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/sales_price_map.png" width="45%" />
 </p> 
 
