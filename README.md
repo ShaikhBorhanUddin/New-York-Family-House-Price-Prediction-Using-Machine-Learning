@@ -272,12 +272,14 @@ The repeated borough distribution plot reinforces this imbalance and highlights 
   <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/year_built_barchart.png" width="57.5%" />
 </p> 
 
+The spatial distribution by year-built range shows that properties constructed between 1901 and 1950 dominate the urban landscape across all boroughs, reflecting New York City’s major early 20th century development phase. This pattern is reinforced by the year-built distribution bar chart, where the 1901–1950 era overwhelmingly outweighs other periods, followed by post-1950 constructions, while pre-1850 buildings form only a negligible share. The geographic spread of newer properties (2001–2024) appears more scattered and limited, indicating relatively modest recent residential expansion compared to historical development. 
+
 <p align="center">
   <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/sale_year.png" width="49%" />
   <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/sale_month.png" width="49%" />
 </p> 
 
-Analyze the findings 
+The sales-by-year distribution highlights clear temporal fluctuations in market activity, with higher transaction volumes in the early 2000s, a noticeable decline following the 2008 financial crisis, and a gradual recovery peaking again around 2021–2022 before tapering slightly. Meanwhile, the sales-by-month distribution reveals a strong seasonal trend, with transactions increasing from spring, peaking in summer (especially August) and remaining relatively high into early autumn, while winter months consistently record lower activity. Together, these trends suggest that both macroeconomic conditions and seasonality play a significant role in housing market dynamics. 
 
 <p align="center">
   <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/building_class_category_description.png" width="45.7%" />
