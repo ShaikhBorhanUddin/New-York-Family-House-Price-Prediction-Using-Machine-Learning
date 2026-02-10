@@ -328,7 +328,9 @@ The performance metrics of all three tested models are presented in this section
 
 Based on the evaluation metrics, **Random Forest** is the best-performing model in this project. It achieves the lowest MAE (208,127.17) and lowest RMSE (685,492.62), indicating more accurate price predictions with smaller average and squared errors. In addition, it records the highest R² score (0.73), meaning it explains the largest proportion of variance in adjusted house prices compared to XGBoost and ElasticNet. 
 
-To assess how accurately the models predict house prices, predictions for 40 randomly selected samples from the test dataset were compared against the actual values. Based on this comparison, the Random Forest model did not demonstrate a clear or consistent superiority over the other models. 
+To assess how accurately the models predict house prices, predictions for 40 randomly selected samples from the test dataset were compared against the actual values. However, based on this comparison, the Random Forest model did not demonstrate a clear or consistent superiority over the other models. 
+
+![Dashboard](https://github.com/ShaikhBorhanUddin/New-York-Property-Price-Prediction-Using-Machine-Learning/blob/main/Assets/actual_vs_predicted.png?raw=true) 
 
 ## Deployment 
 
