@@ -318,6 +318,9 @@ Three different regression models were trained and compared to capture both line
 
 ## Model Performance Evaluation 
 
+The performance metrics of all three tested models are presented in this section, evaluated using Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R-squared (R²). 
+
+
 ## Deployment 
 
 To access the streamlit app click the [Link](https://nycfamilyhousepriceprediction.streamlit.app/).
