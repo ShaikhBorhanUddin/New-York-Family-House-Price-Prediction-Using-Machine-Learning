@@ -334,6 +334,8 @@ To assess how accurately the models predict house prices, predictions for 40 ran
 
 Plots with a locally weighted regression (LOESS) curve for each model was also generated. This type of curve is more adaptive than a simple polynomial and can better reflect the 'native' trend of how each model's predictions relate to the actual values without imposing a fixed functional form. This gives a good visual sense of the general agreement between actual and predicted values for each model. 
 
+![Dashboard](https://github.com/ShaikhBorhanUddin/New-York-Property-Price-Prediction-Using-Machine-Learning/blob/main/Assets/LOESS.png?raw=true) 
+
 
 
 ## Deployment 
