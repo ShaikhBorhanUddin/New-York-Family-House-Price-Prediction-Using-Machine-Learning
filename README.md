@@ -365,7 +365,7 @@ A Folium-based property location and sale price heatmap over Google Maps would p
   <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/folium_property_heatmap.png" width="54.8%" />
 </p> 
 
-For deployment, all available data points would need to be rendered to enable meaningful comparison, which would further increase computational overhead. Therefore, although these heatmap visualizations were explored and analyzed during the Data Exploratory Analysis (DEA) phase, they were intentionally excluded from the deployed Streamlit application to ensure smooth responsiveness and usability. 
+For deployment, all available data points would need to be rendered to enable meaningful comparison, which would further increase computational overhead. Therefore, although these heatmap visualizations were explored and analyzed during the Exploratory Data Analysis phase, they were intentionally excluded from the deployed Streamlit application to ensure smooth responsiveness and usability. 
 
 ## Tools Used 
 
