@@ -359,8 +359,8 @@ To access the streamlit app click the [Link](https://nycfamilyhousepricepredicti
 Since the model was trained exclusively on family house sale data, the dataset represents only a subset of all properties within each neighborhood. Properties that were never sold (e.g., inherited or endowed properties) are also not included in the training data. As a result, dynamic filtering for `BLOCK` and `LOT` could not be implemented in the Streamlit application. Such dynamic listing would only be feasible if the dataset contained a complete inventory of all properties within each neighborhood. 
 
 <p align="center">
-  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/50k_sample_scatterplot.png" width="44%" />
-  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/folium_property_heatmap.png" width="55%" />
+  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/50k_sample_scatterplot.png" width="44.5%" />
+  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/folium_property_heatmap.png" width="54.5%" />
 </p> 
 
 ## Tools Used 
