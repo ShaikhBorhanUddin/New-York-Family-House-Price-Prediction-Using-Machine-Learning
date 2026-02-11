@@ -360,7 +360,7 @@ Since the model was trained exclusively on family house sale data, the dataset r
 
 <p align="center">
   <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/50k_sample_scatterplot.png" width="43%" />
-  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/folium_property_heatmap.png" width="57%" />
+  <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/folium_property_heatmap.png" width="56%" />
 </p> 
 
 ## Tools Used 
