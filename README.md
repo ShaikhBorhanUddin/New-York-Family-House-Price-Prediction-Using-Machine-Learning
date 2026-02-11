@@ -350,7 +350,8 @@ Although Random Forest achieved the best performance among the three models, its
 
 - The average latitude and longitude were computed for each unique combination of `BOROUGH`, `NEIGHBORHOOD`, and `ZIP CODE` from the original dataset and stored as a structured dictionary. This mapping was serialized and saved as location_coordinates_mapping.pkl, which is loaded by the application to dynamically resolve geographic coordinates based on user-selected location inputs and update the map visualization in real time.
 
-To access the streamlit app click the [Link](https://nycfamilyhousepriceprediction.streamlit.app/). 
+To access the streamlit app click the [Link](https://nycfamilyhousepriceprediction.streamlit.app/). Users can enter property details such as location, building characteristics, size, and sale information (including borough, neighborhood, ZIP code, unit counts, square footage, construction year, and building class). Once the information is submitted, the application instantly predicts the current market price of the property. 
+
 
 ## Limitations 
 
