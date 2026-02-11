@@ -346,6 +346,8 @@ Although Random Forest achieved the best performance among the three models, its
 
 - The unique values for the categorical features `NEIGHBORHOOD`, `BUILDING CLASS AT TIME OF SALE`, and `BUILDING CLASS CATEGORY DESCRIPTION` were extracted from the original DataFrame (251, 18, and 6 unique values respectively). These values were stored in a dictionary and serialized into a `unique_categorical_values.pkl` file, which is loaded as an artifact in application file during deployment. This ensures that user inputs are constrained to valid, NYC-realistic categories, preventing arbitrary or unrealistic text entries and maintaining consistency with the training data. 
 
+- To support dynamic, dependency-aware filtering in the Streamlit application, structured mappings were constructed between `BOROUGH`, `NEIGHBORHOOD`, and `ZIP CODE`. Four lookup dictionaries were generated: **borough-to-neighborhoods**, **borough-to-zipcodes**, **neighborhood-to-zipcodes**, and **zipcode-to-borough** (under the dataset constraint that each ZIP code maps to a single borough). These lookup tables were merged into a unified artifact, `combined_location_mapping.pkl`, which is loaded at runtime by application to enforce valid hierarchical relationships and ensure consistent, data-driven user input across all location fields. 
+
 To access the streamlit app click the [Link](https://nycfamilyhousepriceprediction.streamlit.app/). 
 
 ## Limitations 
