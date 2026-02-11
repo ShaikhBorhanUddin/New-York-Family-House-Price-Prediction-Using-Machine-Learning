@@ -340,11 +340,13 @@ Both XGBoost and Random Forest demonstrate superior predictive performance over 
 
 ## Deployment 
 
+Although Random Forest achieved the best performance among the three models, its large size (3.66 GB) made it unsuitable for deployment in a lightweight framework such as Streamlit Web. Consequently, the second-best performing model, XGBoost, was selected for deployment due to its significantly smaller size (275 KB). In addition to the trained model, four additional .pkl files were required to support consistent preprocessing and inference during deployment. 
+
+- To avoid feature name mismatches at inference time, the complete list of feature names was saved as `feature_names.pkl` file and loaded as an artifact within the application. 
+
+- The unique values for the categorical features `NEIGHBORHOOD`, `BUILDING CLASS AT TIME OF SALE`, and `BUILDING CLASS CATEGORY DESCRIPTION` were extracted from the original DataFrame (251, 18, and 6 unique values respectively). These values were stored in a dictionary and serialized into a `unique_categorical_values.pkl` file, which is loaded as an artifact in application file during deployment. This ensures that user inputs are constrained to valid, NYC-realistic categories, preventing arbitrary or unrealistic text entries and maintaining consistency with the training data. 
+
 To access the streamlit app click the [Link](https://nycfamilyhousepriceprediction.streamlit.app/). 
-
-To avoid feature name mismatches at inference time, the complete list of feature names was saved as a `.pkl` file and loaded as an artifact within the application. 
-
-The unique values for the categorical features `NEIGHBORHOOD`, `BUILDING CLASS AT TIME OF SALE`, and `BUILDING CLASS CATEGORY DESCRIPTION` were extracted from the original DataFrame (251, 18, and 6 unique values respectively). These values were stored in a dictionary and serialized into a `.pkl` file, which is loaded as an artifact in application file during deployment. This ensures that user inputs are constrained to valid, NYC-realistic categories, preventing arbitrary or unrealistic text entries and maintaining consistency with the training data. 
 
 ## Limitations 
 
