@@ -356,6 +356,8 @@ To access the streamlit app click the [Link](https://nycfamilyhousepricepredicti
 
 ## Limitations 
 
+Despite careful model development and deployment, several data and system level limitations should be considered when interpreting the predictions. 
+
 Since the model was trained exclusively on family house sale data, the dataset represents only a subset of all properties within each neighborhood. Properties that were never sold (e.g., inherited or endowed properties) are not included in the training data. In addition, the model assumes that geographic identifiers such as `BOROUGH`, `NEIGHBORHOOD`, and `ZIP CODE` are static and consistently defined over time. In reality, neighborhood boundaries, zoning regulations, land use classifications, and administrative definitions may evolve due to urban development, rezoning, or gentrification effects. These temporal and structural changes are not captured in the dataset. As a result of both incomplete property coverage and static geographic assumptions, dynamic filtering for `BLOCK` and `LOT` could not be implemented in the Streamlit application. Such functionality would only be feasible if a complete, time-aware inventory of all properties within each neighborhood were available. 
 
 A Folium-based property location and sale price heatmap over Google Maps would provide significantly richer spatial insights compared to simple geolocation markers in the application. However, rendering such visualizations for large datasets is both time and memory intensive, leading to slow load times and a degraded user experience. The visualizations shown below illustrate this limitation, even when plotting a reduced sample of 50,000 data points. 
