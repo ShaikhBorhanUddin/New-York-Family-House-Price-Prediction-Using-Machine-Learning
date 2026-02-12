@@ -444,3 +444,31 @@ If you have any questions or would like to connect, feel free to reach out.
 📧 [`Email`](mailto:shaikhborhanuddin@gmail.com) 🔗 [`LinkedIn`](https://www.linkedin.com/in/shaikh-borhan-uddin-905566253/) 🌐 [`Portfolio`](https://github.com/ShaikhBorhanUddin) 
 
 Feel free to fork the repository, experiment with other models, or improve deployment! 
+
+```mermaid
+flowchart LR
+
+A[NYC Property Sales Dataset] --> C[Data Engineering]
+B[PLUTO Dataset] --> C[Data Engineering]
+
+C --> D[Data Cleaning & Validation]
+D --> E[Dataset Merge<br/>(BOROUGH · BLOCK · LOT)]
+
+E --> F[Feature Engineering]
+F --> F1[Geospatial Features<br/>(Latitude · Longitude)]
+F --> F2[Structural Features<br/>(Units · Area · Year Built)]
+F --> F3[Categorical Encoding]
+
+F1 --> G[Model Training]
+F2 --> G
+F3 --> G
+
+G --> H[Model Evaluation<br/>(MAE · RMSE · R²)]
+H --> I[XGBoost Selected]
+
+I --> J[Model Artifacts<br/>(model.pkl · feature_names.pkl)]
+
+J --> K[Streamlit Web Application]
+K --> L[User Inputs Property Details]
+L --> M[Predicted Sale Price]
+```
