@@ -407,7 +407,7 @@ This project was built using the following tools and technologies:
 
 ### Version Control & Environment
 
-`Git` & `GitHub` — Source code versioning and project hosting. 
+- `Git` & `GitHub` — Source code versioning and project hosting. 
 
 ## Licence 
 
