@@ -389,6 +389,8 @@ A Folium-based property location and sale price heatmap over Google Maps would p
 
 For deployment, all available data points would need to be rendered to enable meaningful comparison, which would further increase computational overhead. Therefore, although these heatmap visualizations were explored and analyzed during the Exploratory Data Analysis phase, they were intentionally excluded from the deployed Streamlit application to ensure smooth responsiveness and usability. 
 
+Finally, a key limitation of this project is the exclusion of the Hedonic Price Model (HPM), primarily due to data and computational constraints. Implementing HPM effectively requires detailed and accurate information on all property attributes as well as location-based factors (e.g., school ratings, neighborhood crime statistics, proximity to amenities), many of which were unavailable in the current dataset. Additionally, integrating HPM with machine learning models would have increased the computational complexity and resource requirements, which could have made the lightweight deployment framework less efficient and more difficult to maintain. 
+
 ## Tools Used 
 
 This project was built using the following tools and technologies:
