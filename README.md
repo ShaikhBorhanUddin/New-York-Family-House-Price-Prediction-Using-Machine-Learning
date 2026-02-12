@@ -411,4 +411,13 @@ This project was built using the following tools and technologies:
 
 ## Licence 
 
+This project is licensed under the MIT License, a permissive open-source license that allows reuse, modification, and distribution with attribution. Users are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the project, provided that the original copyright and license notice are included in all copies or substantial portions of the software. 
+
 ## Contact 
+
+If you have any questions or would like to connect, feel free to reach out! 
+
+**Shaikh Borhan Uddin**  
+📧 [`Email`](mailto:shaikhborhanuddin@gmail.com) 🔗 [`LinkedIn`](https://www.linkedin.com/in/shaikh-borhan-uddin-905566253/) 🌐 [`Portfolio`](https://github.com/ShaikhBorhanUddin) 
+
+Feel free to fork the repository, experiment with other models, or improve deployment! 
