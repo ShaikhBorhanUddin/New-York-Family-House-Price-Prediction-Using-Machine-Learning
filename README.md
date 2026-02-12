@@ -93,6 +93,24 @@ House Price Prediction Project
 
 ## Workflow 
 
+The following sequence is maintained consistently throughout the project to ensure a structured and reproducible machine learning pipeline:
+
+- Upload and load the required datasets
+
+- Perform data cleaning, preprocessing, and merge multiple datasets into a unified structure
+
+- Derive new features through feature engineering to enhance predictive performance
+
+- Conduct exploratory data analysis (EDA) to understand data patterns, distributions, and relationships
+
+- Split the dataset into training and testing sets and train multiple machine learning regression models
+
+- Analyze and compare model performance to determine the best-performing model
+
+- Develop the application file and deploy the selected model as an interactive Streamlit web application
+
+- Document project in repository and ensure all necessary files are uploaded
+
 ## Dataset 
 
 The primary dataset [Current NYC Property Sales](https://www.kaggle.com/datasets/datasciencedonut/current-nyc-property-sales), is sourced from Kaggle. The dataset contains a record of every property sold in the New York City property market since 2003 (the first year sales data was first listed on the public record) and updates monthly to include rolling sales. However, for this project, 2018049 records from 2003 to 2023 were considered. This dataset is mainly used for property descriptions and sales transaction information during machine learning model training. A brief description of columns of the Sales dataset is given in the following table. 
