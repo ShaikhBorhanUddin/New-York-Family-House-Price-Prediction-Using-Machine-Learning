@@ -156,14 +156,14 @@ Handling these missing values, along with data cleaning, feature modification, e
 
 ## Data Cleaning and Preprocessing 
 
-Data cleaning begins with the property sales dataset. The **BOROUGH** column contains mixed data types (integers and strings). Converting all values to integers reduces the column to five unique entries, corresponding to the five boroughs of New York City. 
+Data cleaning begins with the property sales dataset. The `BOROUGH` column contains mixed data types (integers and strings). Converting all values to integers reduces the column to five unique entries, corresponding to the five boroughs of New York City. 
 
 ```bash
 1: 'Manhattan', 2: 'Bronx', 3: 'Brooklyn', 4: 'Queens', 5: 'Staten Island'
 ```
-In the **NEIGHBORHOOD** column, inconsistencies were observed due to trailing white spaces, which artificially inflated the number of unique values (for example, both 'ALPHABET CITY' and 'ALPHABET CITY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' appeared as separate entries). Trimming white spaces, along with removing anomalous non-text entries (such as integer values like 1026, 3019, 3004, and 1021), significantly reduced redundant categories and improved data consistency. 
+In the `NEIGHBORHOOD` column, inconsistencies were observed due to trailing white spaces, which artificially inflated the number of unique values (for example, both 'ALPHABET CITY' and 'ALPHABET CITY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' appeared as separate entries). Trimming white spaces, along with removing anomalous non-text entries (such as integer values like 1026, 3019, 3004, and 1021), significantly reduced redundant categories and improved data consistency. 
 
-Each **BUILDING CLASS CATEGORY** entry combines a category number and a textual description, where the first two characters represent the category code and the remaining text provides the description. To facilitate more effective machine learning training, this feature was decomposed into two separate variables: **BUILDING CLASS CATEGORY NUMBER** and **BUILDING CLASS CATEGORY DESCRIPTION**. 
+Each `BUILDING CLASS CATEGORY` entry combines a category number and a textual description, where the first two characters represent the category code and the remaining text provides the description. To facilitate more effective machine learning training, this feature was decomposed into two separate variables: `BUILDING CLASS CATEGORY NUMBER` and `BUILDING CLASS CATEGORY DESCRIPTION`. 
 
 |     BUILDING CLASS CATEGORY    | BUILDING CLASS CATEGORY NUMBER | BUILDING CLASS CATEGORY DESCRIPTION |
 |--------------------------------|--------------------------------|-------------------------------------|
@@ -173,11 +173,11 @@ Each **BUILDING CLASS CATEGORY** entry combines a category number and a textual 
 
 Since this project focuses on family house price prediction, only records corresponding to one-, two-, and three-family homes/dwellings were retained, while all other property categories were excluded. Although this filtering significantly reduced the dataset size, it preserved a sufficiently large and representative sample for modeling family housing prices.
 
-The **ZIP CODE** column name contained embedded whitespace, which was stripped to standardize the schema and prevent downstream processing issues. The **APARTMENT NUMBER** feature was removed, as apartment identifiers are not predictive of sale prices and may introduce noise (different properties can share identical apartment numbers, which can confuse machine learning models).
+The `ZIP CODE` column name contained embedded whitespace, which was stripped to standardize the schema and prevent downstream processing issues. The `APARTMENT NUMBER` feature was removed, as apartment identifiers are not predictive of sale prices and may introduce noise (different properties can share identical apartment numbers, which can confuse machine learning models).
 
-The **ADDRESS** column was also dropped due to its high risk of data leakage and extremely high cardinality, with over 600,000 unique textual values, making it impractical for encoding prior to model training. Similarly, the **EASE-MENT** column contained a substantial proportion of missing values and was therefore excluded from further analysis. Since the **BUILDING CLASS CATEGORY NUMBER** and **BUILDING CLASS CATEGORY DESCRIPTION** features were derived from the original **BUILDING CLASS CATEGORY** field, the original column became redundant and was subsequently removed.
+The `ADDRESS` column was also dropped due to its high risk of data leakage and extremely high cardinality, with over 600,000 unique textual values, making it impractical for encoding prior to model training. Similarly, the `EASE-MENT` column contained a substantial proportion of missing values and was therefore excluded from further analysis. Since the `BUILDING CLASS CATEGORY NUMBER` and `BUILDING CLASS CATEGORY DESCRIPTION` features were derived from the original `BUILDING CLASS CATEGORY` field, the original column became redundant and was subsequently removed.
 
-While the original **SALE DATE** provides day-level granularity, real estate prices typically vary at monthly or quarterly scales. To capture meaningful temporal trends while avoiding high-cardinality features and potential leakage, **SALE YEAR** and **SALE MONTH** were derived from the sale date and retained in place of the full date field. 
+While the original `SALE DATE` provides day-level granularity, real estate prices typically vary at monthly or quarterly scales. To capture meaningful temporal trends while avoiding high-cardinality features and potential leakage, `SALE YEAR` and `SALE MONTH` were derived from the sale date and retained in place of the full date field. 
 
 | SALE DATE | SALE YEAR | SALE MONTH |
 |-----------|-----------|------------|
@@ -185,11 +185,11 @@ While the original **SALE DATE** provides day-level granularity, real estate pri
 | 2022-07-28 | 2022 | 7 |
 | 2022-04-08 | 2022 | 8 | 
 
-Finally, all **SALE PRICE** entries below $15,000 were removed from the dataset. This threshold is not arbitrary but reflects an industry-informed heuristic based on New York City real estate behavior and dataset characteristics. In the NYC market, even the lowest-priced legitimate transactions (such as vacant land, foreclosed units, or parking spaces) rarely occur below $15,000 in arm’s-length sales. Moreover, the dataset documentation indicates that zero-valued sales represent transfers without cash consideration, and exploratory analysis shows that most non-market or artificial transactions cluster between $0 and $10,000. Setting the cutoff at $15,000 effectively removes these non-genuine transactions while preserving valid low-value sales, resulting in a cleaner and more reliable target variable for modeling.
+Finally, all `SALE PRICE` entries below $15,000 were removed from the dataset. This threshold is not arbitrary but reflects an industry-informed heuristic based on New York City real estate behavior and dataset characteristics. In the NYC market, even the lowest-priced legitimate transactions (such as vacant land, foreclosed units, or parking spaces) rarely occur below $15,000 in arm’s-length sales. Moreover, the dataset documentation indicates that zero-valued sales represent transfers without cash consideration, and exploratory analysis shows that most non-market or artificial transactions cluster between $0 and $10,000. Setting the cutoff at $15,000 effectively removes these non-genuine transactions while preserving valid low-value sales, resulting in a cleaner and more reliable target variable for modeling.
 
 At this stage, the [cleaned property sales dataset](https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Dataset/Cleaned/nyc_property_sales_cleaned.csv.zip) is finalized and saved for subsequent use in the feature engineering pipeline. 
 
-The PLUTO (Primary Land Use Tax Lot Output) dataset provides extensive land-use and geographic information at the tax lot level. To reduce complexity during the feature engineering process, only a subset of relevant features was retained, including **borough**, **Tax block**, **Tax lot**, **postcode**, **year built**, **latitude**, and **longitude**, while all other columns were excluded. 
+The PLUTO (Primary Land Use Tax Lot Output) dataset provides extensive land-use and geographic information at the tax lot level. To reduce complexity during the feature engineering process, only a subset of relevant features was retained, including `borough`, `Tax block`, `Tax lot`, `postcode`, `year built`, `latitude`, and `longitude`, while all other columns were excluded. 
 
 To maintain data integrity and ensure consistency across datasets, the following mapping was applied to the borough column. 
 
@@ -199,7 +199,7 @@ To maintain data integrity and ensure consistency across datasets, the following
 
 Once these steps were completed, the [cleaned PLUTO dataset](https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Dataset/Cleaned/PLUTO_cleaned.csv.zip) was saved for use in the subsequent feature engineering process. 
 
-The CPI Index dataset was used exclusively to convert historical house sale prices to their present-time equivalents. Since the index values are already provided, the **Inflation** column was redundant and therefore removed, and the **Index** column was renamed to **CPI** for clarity and consistency. 
+The CPI Index dataset was used exclusively to convert historical house sale prices to their present-time equivalents. Since the index values are already provided, the `Inflation` column was redundant and therefore removed, and the `Index` column was renamed to `CPI` for clarity and consistency. 
 
 Official CPI figures are published by the U.S. Bureau of Labor Statistics on the first day of each month and remain valid for the entire month. To support feature engineering and dataset integration, **Year** and **Month** features were derived from the **Date** column. This enables seamless merging with the sales dataset, which contains corresponding sale year and sale month fields. 
 
@@ -225,9 +225,9 @@ Using these three standardized keys, the Sales dataset was then merged with the 
   <img src="https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/blob/main/Assets/sales_PLUTO_join.png" width="56%" />
 </p>  
 
-The **YEAR BUILT** column contained only a small number of missing values, which were successfully imputed using the corresponding **yearbuilt** column. In contrast, more than 7,000 records were missing **latitude** and **longitude** values. To address this, geolocation imputation was performed in a hierarchical manner. First, missing coordinates were imputed using ZIP CODE level centroids, calculated from available records, with fallback to global medians where necessary. This approach successfully resolved the majority of missing cases. For the remaining unmatched records, BOROUGH level centroids were applied to ensure complete spatial coverage. 
+The `YEAR BUILT` column contained only a small number of missing values, which were successfully imputed using the corresponding `yearbuilt` column. In contrast, more than 7,000 records were missing `latitude` and `longitude` values. To address this, geolocation imputation was performed in a hierarchical manner. First, missing coordinates were imputed using ZIP CODE level centroids, calculated from available records, with fallback to global medians where necessary. This approach successfully resolved the majority of missing cases. For the remaining unmatched records, BOROUGH level centroids were applied to ensure complete spatial coverage. 
 
-At this stage, the recently merged and cleaned Sales–PLUTO dataset is further integrated with the cleaned CPI dataset to enable inflation-adjusted sale price computation, using **SALE YEAR** and **SALE MONTH** from the sales data mapped to the corresponding **Year** and **Month** fields in the CPI dataset. 
+At this stage, the recently merged and cleaned Sales–PLUTO dataset is further integrated with the cleaned CPI dataset to enable inflation-adjusted sale price computation, using `SALE YEAR` and `SALE MONTH` from the sales data mapped to the corresponding `Year` and `Month` fields in the CPI dataset. 
 
 ```bash
 'Year': 'SALE YEAR', 'Month': 'SALE MONTH'
@@ -253,7 +253,7 @@ After this inflation adjustment, the sale prices become significantly more meani
 | 2999999 | 3286669 |
 | 11100000 | 12181076 | 
 
-At this stage, the original SALE PRICE column becomes redundant and is therefore removed, while ADJUSTED SALE PRICE is retained as the target variable for machine learning model training. With this, the [feature-engineered dataset](https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/tree/main/Dataset/Feature%20Engineered) is finalized and ready for exploratory data analysis, model development and training. 
+At this stage, the original `SALE PRICE` column becomes redundant and is therefore removed, while `ADJUSTED SALE PRICE` is retained as the target variable for machine learning model training. With this, the [feature-engineered dataset](https://github.com/ShaikhBorhanUddin/New-York-Family-House-Price-Prediction-Using-Machine-Learning/tree/main/Dataset/Feature%20Engineered) is finalized and ready for exploratory data analysis, model development and training. 
 
 ## Exploratory Data Analysis 
 
