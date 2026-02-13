@@ -93,7 +93,7 @@ House Price Prediction Project
 
 ## Workflow 
 
-The following diagram illustrates the end-to-end machine learning workflow adopted in this project, from raw data ingestion to model deployment. The pipeline ensures a structured, reproducible, and production-oriented approach by separating feature engineering, model training, and deployment stages. Multiple regression models are evaluated during the training phase, after which the most suitable model (XGBoost) is selected and deployed as an interactive Streamlit web application for machine learning based property price prediction. 
+The following diagram illustrates the end-to-end machine learning workflow adopted in this project, from raw data ingestion to model deployment. The pipeline ensures a structured, reproducible, and production-oriented approach by separating data cleaning, feature engineering, model train/test, and deployment stages. Multiple regression models are evaluated during the training phase, after which the most suitable model (XGBoost) is selected and deployed as an interactive Streamlit web application for machine learning based property price prediction. 
 
 ![Dashboard](https://github.com/ShaikhBorhanUddin/New-York-Property-Price-Prediction-Using-Machine-Learning/blob/main/Assets/project_workflow.png?raw=true) 
 
