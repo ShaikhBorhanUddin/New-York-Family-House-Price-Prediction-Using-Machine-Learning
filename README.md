@@ -88,7 +88,7 @@ House Price Prediction Project
 ├── app.py                                    # Deployment code
 ├── requirements.txt                          # Python dependencies for deployment
 ├── README.md                                 # Project documentation
-└── Licence
+└── Licence.md
 ```
 
 ## Workflow 
