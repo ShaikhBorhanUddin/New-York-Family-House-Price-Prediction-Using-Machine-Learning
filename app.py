@@ -196,18 +196,16 @@ with col3:
 
     latitude = st.number_input(
         "LATITUDE",
-        min_value=-90.0,
-        max_value=90.0,
         value=float(st.session_state.selected_latitude),
-        format="%.6f"
+        format="%.6f",
+        disabled=True
     )
 
     longitude = st.number_input(
         "LONGITUDE",
-        min_value=-180.0,
-        max_value=180.0,
         value=float(st.session_state.selected_longitude),
-        format="%.6f"
+        format="%.6f",
+        disabled=True
     )
 
     st.session_state.selected_latitude = latitude
